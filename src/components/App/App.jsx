@@ -1,18 +1,15 @@
-import ContactForm from 'components/ContactForm.jsx/ContactForm';
-import { Section } from 'components/Section/Section';
 import { AppStyled } from './App.styled';
-import { ContactsList } from 'components/ContactsList/ContactsList';
-import { Filter } from 'components/Filter/Filter';
+
+import { Header } from 'components/Header/Header';
+import Main from 'components/Main/Main';
+import { Footer } from 'components/Footer/Footer';
 
 export default function App() {
   return (
     <AppStyled>
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <Section title="Contacts">
-        <Filter />
-        <ContactsList />
-      </Section>
+      <Header />
+      <Main />
+      <Footer />
     </AppStyled>
   );
 }
